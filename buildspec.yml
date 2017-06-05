@@ -1,22 +1,25 @@
-version: 0.1
+version: 0.2
 
-environment_variables:
-  plaintext:
+env:
+  variables:
     JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
 
 phases:
   install:
     commands:
       - apt-get update -y
-      - apt-get install -y curl
-      - apt-get install -y jq
-      - apt-get install -y bc
+      - apt-get install -y maven
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - bash cb_bash.sh
+      - echo Build started on `date`
+      - mvn install
   post_build:
     commands:
       - echo Build completed on `date`
+artifacts:
+  files:
+    - sample.war
+  discard-paths: yes
