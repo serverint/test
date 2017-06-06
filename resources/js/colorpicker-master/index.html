@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       
+
+		<!-- jQuery/jQueryUI (hosted) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+	
+
+
+		
+		
+
+		<!-- Plugin -->
+		<script src="jquery.colorpicker.js"></script>
+		<link href="jquery.colorpicker.css" rel="stylesheet" type="text/css"/>
+
+		<!-- Plugin extensions -->
+		<script src="i18n/jquery.ui.colorpicker-nl.js"></script>
+		<script src="parts/jquery.ui.colorpicker-rgbslider.js"></script>
+		<script src="parts/jquery.ui.colorpicker-memory.js"></script>
+    </head>
+    <body>
+
+
+		<div id="book">
+				<div class="prettyprint">
+					<input type="text" id="colorpicker-full" value="fe9810"/>
+				</div>
+				<script class="prettyprint">
+					$(function() {
+						$('#colorpicker-full').colorpicker({
+							parts:			'full',
+							alpha:			true,
+							showOn:			'both',
+							buttonColorize: true,
+							showNoneButton: true
+						});
+					});
+				</script>
+
+		</div>
+	</body>
+</html>

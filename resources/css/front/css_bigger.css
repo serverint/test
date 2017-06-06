@@ -1,0 +1,10 @@
+body			{ font-size:67.5%; }
+
+#cssmenu > ul > li > a {     padding: 16px 40px !important; }
+ul.banner_menu li a {      padding: 4px 15px !important; } 
+
+@media (min-width:981px) and (max-width:1025px) {  
+#cssmenu > ul > li > a {     padding:14px 24px !important; }
+ul.banner_menu li a { padding: 2px 15px !important; }
+
+}

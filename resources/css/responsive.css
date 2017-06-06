@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+@media(max-width:1600px) {
+
+}
+@media(max-width:1400px) {
+
+}
+@media(max-width:1280px) {
+}
+@media(max-width:1024px) {
+
+	.res_table{ max-width: 900px; overflow-x:auto; overflow-y:hidden;}
+	.loginBox{ top:300px;}
+}
+@media(max-width:991px) {	
+	.tooltip-list, .custom-search-input .txt{text-align:center;}	
+	.custom-search-input{margin-top:10px;}
+	
+	.breadcrumb {position:relative; right:auto; top:auto; margin:10px 0 ; background:#e3e4e5;}
+}
+@media(max-width:768px) {
+	/* #wrapper {padding-left: 250px;}*/
+    .fixed-brand{width: 250px;}	
+    #wrapper.toggled {padding-left: 0;}
+    #sidebar-wrapper {width: 250px;}
+    #wrapper.toggled #sidebar-wrapper {width: 250px;}
+    #wrapper.toggled-2 #sidebar-wrapper {width: 50px;}
+    #wrapper.toggled-2 #sidebar-wrapper:hover {width: 250px;}
+ 	#page-content-wrapper { position: relative; margin-left:-15px; margin-right:-15px; -webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+  
+    #wrapper.toggled-2 #page-content-wrapper {position: relative;margin-right: 0;margin-left: -200px;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;width: auto;}
+	#menu{float:left;}
+	
+	
+}
+@media(max-width:767px) {
+	.logo { display:none;}
+	.logo-small {display:block;}
+	.notes li .dropdown-menu {left:auto; right:0;}
+	.nav-head {max-height:140px;}
+	.btn-menu{margin:8px;}
+	
+	
+}
+
+
+
+@media(max-width:639px) {
+	.loginBox { width:90%; min-width:1px;}
+	.loginBox h1 {font-size:30px;}
+}
+
+
+
+
+
+@media(max-width:480px) {
+	.body-info h2{font-size:30px;}
+
+}
+@media(max-width:360px) {
+
+}
+
+
+
+
+
