@@ -15,7 +15,7 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - brew --prefix maven
+      - echo Build started on `date`
       - mvn package
   post_build:
     commands:
