@@ -4,6 +4,7 @@ env:
   variables:
     JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
 
+
 phases:
   install:
     commands:
@@ -14,8 +15,8 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on `date`
-      - mvn install
+      - brew --prefix maven
+      - mvn package
   post_build:
     commands:
       - echo Build completed on `date`
