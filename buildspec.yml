@@ -15,8 +15,7 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - export M2=brew --prefix maven/libexec/bin
-      - export M2_HOME=brew --prefix maven/libexec
+      - brew --prefix maven
       - mvn package
   post_build:
     commands:
